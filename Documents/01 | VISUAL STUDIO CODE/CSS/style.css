@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Gravity;
+    src: url(/Assets/ABCGravity-Condensed-Trial.otf);
+}
+
+/*header style*/
+
+.siteheader {
+    display: flex;
+    padding: 20px 30px;
+    z-index: 1300;
+    background: #EEE3D9;
+    border-bottom: 1px solid #AB8260;
+    text-align: right;
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+.siteheader_logo {
+ width: 200px;
+ height: 200px;
+
+}
+
+.sitemenu {
+    list-style-type:none;
+    position: left;
+    margin: 10px 20px;
+}
+
+.sitemenu a{
+    text-decoration: none;
+    color: #AB8260;
+    padding: 5px 0;
+    position: relative;
+    width: 100px;
+    text-align: right;
+
+}
+
+.sitemenu a::after{
+    content:'';
+    background-color: #AB8260;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.sitemenu a:hover:after {
+    width: 100%;
+}
+
+nav.sticky{
+    position:fixed;
+    top:0;
+    flex: 0;
+}
+
+
+/*index style*/
+
+.index_sectionone_carousel{
+    position: relative;
+    height: 600px;
+    width:80%;
+    margin: 0 auto;
+}
+
+.carousel_images{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    background: #EEE3D9;
+    height: 100%;
+    position: relative;
+
+}
+
+.carousel_track {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.carousel_slide {
+    position:absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY (-50%);
+    background: transparent;
+    border: 0;
+
+}
+
+.carousel_button--left {
+    left: -100px;
+
+}
+
+.carousel_button--right{
+    right: -100px;
+}
+.carousel_button img {
+    width: 10px;
+}
+
+.carousel_nav {
+    background: #BAB532;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 10px ;
+}
+
+.carousel_indicator {
+    border:0;
+    border-radius: 50%;;
+    width: 15px;
+    height: 15px;
+    background: #EEE3D9;
+    margin:0 12px;
+}
+
+.carousel_indicator.current-slide {
+    background-color: #EEE3D9;
+}

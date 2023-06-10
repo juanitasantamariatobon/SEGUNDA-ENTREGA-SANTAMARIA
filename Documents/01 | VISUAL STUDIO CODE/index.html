@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= CSS/style.css> 
+    <title>AVAILABLE ON WEEKENDS</title>
+</head>
+<body>
+    <header class="siteheader">
+       <nav class="nav">
+        <img src="images/LOGO OFICIAL.jpg" class="siteheader_logo">
+        <ul class="sitemenu">
+            <a href="../index.html">HOME</a>
+            <a href="pages/about.html">ABOUT</a>
+            <a href="pages/articles.html">ARTICLES</a> 
+            <a href="pages/club.html">CLUB</a> 
+            <a href="pages/digitalproducts.html">DIGITAL PRODUCTS</a> 
+            <a href="pages/newsletter.html">NEWSLETTER</a> 
+        </ul>
+       </nav>
+
+       <script>
+        var nav = document.getElementById("nav")
+        var sitemenu = document.getElementById("sitemenu")
+        window.onscroll =function (sticky) {
+            if(window.pageYOffset>= menu.offsetTop){
+                navbar.classList.add (sticky)
+            }
+            else{
+                navbar.classList.remove (sticky)
+            }
+
+        }
+        </script>
+    </header>
+    <section class="index_sectionone">
+        <div class="index_sectionone_carousel">
+            <button class="carousel_button carousel_button --left">
+                <img src="images/CAROUSEL INDEX/button.svg">
+            </button>
+
+            <div class="carousel_track-container"></div>
+             <ul class="carousel_track">
+                <li class="carousel_slide">
+                <img class="carousel_images"src="../01 | VISUAL STUDIO CODE/images/CAROUSEL INDEX/SLIDE ONE.jpg">
+                </li>
+                <li class="carousel_slide">
+                <img class="carousel_images" src="../01 | VISUAL STUDIO CODE/images/CAROUSEL INDEX/SLIDE TWO.jpg">
+                </li>
+                <li class="carousel_slide">
+                <img class="carousel_images" src="../01 | VISUAL STUDIO CODE/images/CAROUSEL INDEX/SLIDE THREE.jpg">
+                </li>
+
+             </ul>
+
+            <button class="carousel_button carousel_button --right">
+                <img src="images/CAROUSEL INDEX/left-arrow-svgrepo-com.svg">
+            </button>
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+    </section>
+
